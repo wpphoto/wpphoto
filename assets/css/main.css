@@ -1460,40 +1460,12 @@
 
 /* Banner */
 
-	/* Standard syntax */
-	@keyframes example {
-	    0%   {background-size: 100%;}
-	    100% {background-size: 115%;}
-	}
-	/* Safari 4.0 - 8.0 */
-	@-webkit-keyframes example {
-	    0%   {background-size: 100%;}
-	    100% {background-size: 115%;}
-	}
-	
 	body.is-loading #banner > .inner {
 		opacity: 0;
 		-moz-transform: translateY(1em);
 		-webkit-transform: translateY(1em);
 		-ms-transform: translateY(1em);
 		transform: translateY(1em);
-	}
-
-	.back{
-		background-image: url(../../images/banner2.jpg);
-		 background-repeat: no-repeat;
-	    background-attachment: fixed;
-	    background-position: center; 
-	    background-size: 100%;
-	    animation: example 15s infinite;
-    	animation-direction: alternate;
-    	animation-delay: 0.25s;
-    	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    	-webkit-animation-duration: 15s; /* Safari 4.0 - 8.0 */
-    	-webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
-    	-webkit-animation-delay: 0.25s; /* Safari 4.0 - 8.0 */
-    	-webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
-
 	}
 
 	#banner {
@@ -1516,6 +1488,12 @@
 		min-height: 75vh;
 		height: 75vh;
 		position: relative;
+		background: #000;
+		background-image: url(../../images/banner2.jpg);
+		background-size: cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: center;
 		text-align: center;
 		color: #FFF;
 	}
