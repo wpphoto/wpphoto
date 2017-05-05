@@ -1460,12 +1460,17 @@
 
 /* Banner */
 
-/* Standard syntax */
-@keyframes example {
-    0%   {background-size: 100%;}
-    100% {background-size: 115%;}
-}
-
+	/* Standard syntax */
+	@keyframes example {
+	    0%   {background-size: 100%;}
+	    100% {background-size: 115%;}
+	}
+	/* Safari 4.0 - 8.0 */
+	@-webkit-keyframes example {
+	    0%   {background-size: 100%;}
+	    100% {background-size: 115%;}
+	}
+	
 	body.is-loading #banner > .inner {
 		opacity: 0;
 		-moz-transform: translateY(1em);
@@ -1483,6 +1488,11 @@
 	    animation: example 15s infinite;
     	animation-direction: alternate;
     	animation-delay: 0.25s;
+    	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    	-webkit-animation-duration: 15s; /* Safari 4.0 - 8.0 */
+    	-webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    	-webkit-animation-delay: 0.25s; /* Safari 4.0 - 8.0 */
+    	-webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
 
 	}
 
